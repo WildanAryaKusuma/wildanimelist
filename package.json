@@ -1,8 +1,10 @@
 {
-  "name": "cuyanimelist",
+  "name": "dananimelist",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "migrate": "prisma migrate deploy",
+    "postinstall": "prisma generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -13,7 +15,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.18",
     "@phosphor-icons/react": "^2.1.5",
-    "@prisma/client": "^5.14.0",
+    "@prisma/client": "^5.22.0",
     "eslint-config-next": "^14.2.3",
     "next": "^14.2.3",
     "next-auth": "^4.24.7",
